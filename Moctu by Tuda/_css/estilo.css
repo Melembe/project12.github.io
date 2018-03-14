@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #eff0f1;
+}
+
+#titulo {
+    display: none;
+}
+
+img#imagem-menu{
+    width: 100%;
+    height: 185px;
+}
+
+#menu {
+    margin-top: -189px;
+    margin-left: 88.9%;
+    position: absolute;
+    width: 0%;
+    height: 30px;
+    background-color: #977b49;
+    font-family: 'Arial';
+    opacity: 0.7;
+    
+}
+#menu h1 {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#menu ul li {
+    width: 150px;
+    float: left;
+}
+
+#menu a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #977b49;
+    font-size: 11pt;
+}
+
+#menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+    margin-left: -150px;
+    margin-top: -37px;
+    
+    
+}
+
+#menu a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+#menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #fff;
+    
+}
+#menu ul ul li a {
+    color: #fff;
+    background-color: #ddd;
+}
+
+/*config. dos SubMenus*/
+#menu ul li ul li:hover a {
+    color: #fff;
+}
+
+/*COnfig. do botão menu (Quando estiver abaixo dos 800px)*/
+label[for="bt_menu"] {
+    padding: 3px;
+    color: #fff;
+    background-color: #4a4a4a;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+   
+}
+#bt_menu {
+    display: none;
+}
+label[for="bt_menu"] {
+    display: none;
+}
+
+
+
+/*Config. quando estiver abaixo dos 801px*/
+@media(max-width: 800px) {
+    
+    label[for="bt_menu"] {
+        display: block;
+        position: fixed;
+        
+    }
+    #titulo {
+    display: inherit;
+    margin-left: 35%;
+}
+    #bt_menu:checked ~ #menu {
+        margin-top: 41px;
+        position: fixed;
+    }
+    #menu {
+        margin-top: 5px;
+        margin-top: -100%;
+        transition: all .5s;
+    }
+    #menu ul li {
+        width: 100%;
+        float: none;
+        border-bottom: solid 0.8px #fff;
+    }
+    #menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s;
+    }
+    #menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+/*corpo*/
+#corpo {
+    height: 2000px;
+}
+
+#imagem {
+    width: 20%;
+    height: 10%;
+}
+
+/*rodape*/
+#rodape {
+   position: relative;
+   bottom: 0;
+   font-family: 'Arial';
+}
+
+#rodape p {
+    height: 17%;   
+    text-align: center;
+    background-color: #4a4a4a;
+    width: 100%;
+    color: #fff;
+}
+
+#rodape p a {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape p a:hover {
+    background-color: #fff;
+    color: #444;
+}
